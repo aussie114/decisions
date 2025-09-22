@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758538093
+::res://::1758540082
 export_presets.cfg::TextFile::-1::1758538093::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1758539778::0::1::::<><><>0<>0<><>::
 ::res://assets/::1758538035
 background.png::CompressedTexture2D::2742370705452202745::1758536544::1758537353::1::::<><><>0<>0<>e68d40b8063ac285b0bdfba6a6124a62<>res://.godot/imported/background.png-1fdba8b6a966ce2c2ffc607f7c096e95.ctex::
 cover_art.png::CompressedTexture2D::1096163960446468786::1758537929::1758538034::1::::<><><>0<>0<>0104a92276299e94c694098877be420b<>res://.godot/imported/cover_art.png-bfe1bc90d58372b236c4eda1e3fc241d.ctex::
@@ -8,12 +9,13 @@ icon.svg::CompressedTexture2D::1187278315036758179::1758507375::1758537412::1:::
 Ubuntu-Medium.ttf::FontFile::9128307325325283048::1758536198::1758537349::1::::<><><>0<>0<>e137fde0f189705e547c2cc4f9021eb3<>res://.godot/imported/Ubuntu-Medium.ttf-cf9bb113b17d53da764ad02c3c840857.fontdata::
 Untitled.blend::PackedScene::9065625555387525170::1758538031::1758538035::1::::<><><>0<>0<>eb98fd2b629d095d8da68b402f7eea4a<>res://.godot/imported/Untitled.blend-35953a487ba06be279506bbf0504f89d.scn::
 ::res://exports/::1758538139
-::res://exports/web/::1758538093
+::res://exports/web/::1758538145
 index.apple-touch-icon.png::CompressedTexture2D::3381687682741541112::1758538093::1758538145::1::::<><><>0<>0<>171cb61bee13dddedce43994b8d5f6cc<>res://.godot/imported/index.apple-touch-icon.png-bec44240503e0edb75d852ab0cc26d58.ctex::
 index.icon.png::CompressedTexture2D::4925530509386593505::1758538093::1758538145::1::::<><><>0<>0<>28f605ddb170ee9a3e2fa700173bdd30<>res://.godot/imported/index.icon.png-8466b9836b3b13bcc45e53125321ef39.ctex::
 index.png::CompressedTexture2D::7093470485701956830::1758538093::1758538145::1::::<><><>0<>0<>2bc12e6c89756ef1c1b1cebd1107716b<>res://.godot/imported/index.png-d03311572afeb237347e3aea48014cb0.ctex::
 ::res://master/::1758537402
 master.gd::GDScript::3753447982340216828::1758537039::0::1::::<>Control<><>0<>0<><>::
 master.tscn::PackedScene::3526013536959489192::1758537402::0::1::::<><><>0<>0<><>::uid://btqg0fkm85vmq::::res://master/master.gd<>uid://bfcopeirv56ev::::res://assets/background.png<>uid://d3b25grnjsa4o::::res://assets/Ubuntu-Medium.ttf
-::res://screenshots/::1758537381
-screenshot.png::CompressedTexture2D::792731336915341802::1758527584::1758537381::1::::<><><>0<>0<>26fca1436b8614c293e7ed68f3e7f31e<>res://.godot/imported/screenshot.png-366f1bfaaaad7eddb9e724c7ff485921.ctex::
+::res://screenshots/::1758540345
+screenshot_001.png::CompressedTexture2D::8371403531371372442::1758540262::1758540353::1::::<><><>0<>0<>b130fdb52dcf365043c9cbe13c884efa<>res://.godot/imported/screenshot_001.png-5f4d7613af4cf1be564e0b601eb9337d.ctex::
+screenshot_002.png::CompressedTexture2D::3875123823471123121::1758540305::1758540353::1::::<><><>0<>0<>802410985198443aa9f6116a6a760663<>res://.godot/imported/screenshot_002.png-896db31066016316fc777a935b3e2393.ctex::
