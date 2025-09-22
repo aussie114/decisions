@@ -1,2 +1,7 @@
 res://master.tscn
 res://master.gd
+res://key/key.tscn
+res://master/master.tscn
+res://key/key.gd
+res://backspace/backspace.tscn
+res://backspace/backspace.gd

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqia6sseel8lw"]
+[gd_scene load_steps=6 format=3 uid="uid://bqia6sseel8lw"]
 
 [ext_resource type="Script" uid="uid://btqg0fkm85vmq" path="res://master/master.gd" id="1_te040"]
 [ext_resource type="Texture2D" uid="uid://bfcopeirv56ev" path="res://assets/background.png" id="2_s35ub"]
 [ext_resource type="FontFile" uid="uid://d3b25grnjsa4o" path="res://assets/Ubuntu-Medium.ttf" id="3_h2bm4"]
+[ext_resource type="PackedScene" uid="uid://bw5mjhq6pniq7" path="res://key/key.tscn" id="4_4d3qe"]
+[ext_resource type="PackedScene" uid="uid://cd7t5joreqiyk" path="res://backspace/backspace.tscn" id="5_unbl8"]
 
 [node name="master" type="Control"]
 layout_mode = 3
@@ -20,9 +22,9 @@ centered = false
 [node name="output" type="Label" parent="."]
 layout_mode = 0
 offset_left = 286.0
-offset_top = 125.0
+offset_top = 82.0
 offset_right = 978.0
-offset_bottom = 216.0
+offset_bottom = 173.0
 theme_override_fonts/font = ExtResource("3_h2bm4")
 theme_override_font_sizes/font_size = 80
 text = "Enter your options"
@@ -31,9 +33,9 @@ horizontal_alignment = 1
 [node name="input" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 175.0
-offset_top = 362.0
+offset_top = 242.0
 offset_right = 1001.0
-offset_bottom = 415.0
+offset_bottom = 295.0
 theme_override_fonts/font = ExtResource("3_h2bm4")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "Example: apple, banana, orange"
@@ -44,9 +46,219 @@ wait_time = 0.1
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1018.0
-offset_top = 362.0
+offset_top = 242.0
 offset_right = 1152.0
-offset_bottom = 415.0
+offset_bottom = 295.0
 theme_override_fonts/font = ExtResource("3_h2bm4")
 theme_override_font_sizes/font_size = 32
 text = " Submit "
+
+[node name="number_row" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -385.0
+offset_top = -1.0
+offset_right = 385.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="key" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "1"
+
+[node name="key2" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "2"
+
+[node name="key3" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "3"
+
+[node name="key4" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "4"
+
+[node name="key5" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "5"
+
+[node name="key6" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "6"
+
+[node name="key7" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "7"
+
+[node name="key8" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "8"
+
+[node name="key9" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "9"
+
+[node name="key10" parent="number_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "0"
+
+[node name="backspace" parent="number_row" instance=ExtResource("5_unbl8")]
+layout_mode = 2
+
+[node name="top_row" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = 91.0
+offset_right = 340.0
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="key" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "Q"
+
+[node name="key2" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "W"
+
+[node name="key3" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "E"
+
+[node name="key4" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "R"
+
+[node name="key5" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "T"
+
+[node name="key6" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "Y"
+
+[node name="key7" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "U"
+
+[node name="key8" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "I"
+
+[node name="key9" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "O"
+
+[node name="key10" parent="top_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "P"
+
+[node name="middle_row" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = 185.0
+offset_right = 344.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="key" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+
+[node name="key2" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "S"
+
+[node name="key3" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "D"
+
+[node name="key4" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "F"
+
+[node name="key5" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "G"
+
+[node name="key6" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "H"
+
+[node name="key7" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "J"
+
+[node name="key8" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "K"
+
+[node name="key9" parent="middle_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "L"
+
+[node name="bottom_row" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.5
+offset_top = 279.0
+offset_right = 305.5
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="key" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "Z"
+
+[node name="key2" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "X"
+
+[node name="key3" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "C"
+
+[node name="key4" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "V"
+
+[node name="key5" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "B"
+
+[node name="key6" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "N"
+
+[node name="key7" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = "M"
+
+[node name="key8" parent="bottom_row" instance=ExtResource("4_4d3qe")]
+layout_mode = 2
+text = ","
