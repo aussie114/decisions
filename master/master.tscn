@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqia6sseel8lw"]
+
+[ext_resource type="Script" uid="uid://btqg0fkm85vmq" path="res://master/master.gd" id="1_te040"]
+[ext_resource type="Texture2D" uid="uid://bfcopeirv56ev" path="res://assets/background.png" id="2_s35ub"]
+[ext_resource type="FontFile" uid="uid://d3b25grnjsa4o" path="res://assets/Ubuntu-Medium.ttf" id="3_h2bm4"]
+
+[node name="master" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_te040")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("2_s35ub")
+centered = false
+
+[node name="output" type="Label" parent="."]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 125.0
+offset_right = 978.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("3_h2bm4")
+theme_override_font_sizes/font_size = 80
+text = "Enter your options"
+horizontal_alignment = 1
+
+[node name="input" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 362.0
+offset_right = 1001.0
+offset_bottom = 415.0
+theme_override_fonts/font = ExtResource("3_h2bm4")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Example: apple, banana, orange"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1018.0
+offset_top = 362.0
+offset_right = 1152.0
+offset_bottom = 415.0
+theme_override_fonts/font = ExtResource("3_h2bm4")
+theme_override_font_sizes/font_size = 32
+text = " Submit "
